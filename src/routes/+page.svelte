@@ -1884,7 +1884,7 @@
 						</button>
 					</div>
 
-					<div class="condolence-scrollbar max-h-[600px] space-y-6 overflow-y-auto pr-2">
+					<div class="condolence-scrollbar lg:max-h-[600px] space-y-6 overflow-y-auto pr-2">
 						{#each filterCondolences( [...condolences, ...additionalCondolences] ).slice(0, showMoreCondolences ? undefined : 3) as condolence, i}
 							<div
 								class="border-ng-gold transform rounded-lg border-l-4 bg-gray-50 p-6 shadow-sm transition-all duration-300 hover:translate-x-1 hover:shadow-md"
