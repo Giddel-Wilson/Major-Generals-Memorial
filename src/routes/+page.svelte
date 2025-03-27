@@ -66,34 +66,45 @@
 
 	const militaryAchievements: MilitaryAchievement[] = [
 		{
-			year: '1975',
-			title: 'Nigerian Defence Academy',
-			description: 'Graduated with honors from the prestigious Nigerian Defence Academy.',
-			icon: 'award'
-		},
-		{
-			year: '1985',
-			title: 'United Nations Peacekeeping',
+			year: '1955',
+			title: 'Early Military Career',
 			description:
-				'Led a successful peacekeeping mission in Liberia, earning international recognition.',
-			icon: 'shield'
-		},
-		{
-			year: '1995',
-			title: 'Promotion to Colonel',
-			description: 'Recognized for exceptional leadership and strategic acumen.',
+				'Forever etched in history as "The Boy Who Named NMS," his vision in 1959 redefined the future of the Nigerian Military School, Zaria.',
 			icon: 'star'
 		},
 		{
-			year: '2005',
-			title: 'Appointment as Brigadier General',
-			description: 'Appointed to lead the 3rd Division of the Nigerian Army.',
-			icon: 'award'
+			year: '1970s',
+			title: 'International Training',
+			description:
+				'Trained at United States Army Cadets School (Fort Knox, Kentucky) and Command and Staff College in Quetta, Pakistan, building a strong foundation for his future leadership roles.',
+			icon: 'shield'
 		},
 		{
-			year: '2015',
-			title: 'Promotion to Major General',
-			description: 'Culmination of decades of exemplary service and leadership.',
+			year: '1983',
+			title: 'Ghana Military Restructuring',
+			description:
+				'During a turbulent period in Ghana under Jerry Rawlings, played a key role in restructuring the Ghanaian military, fostering regional stability.',
+			icon: 'shield'
+		},
+		{
+			year: '1990s',
+			title: 'Key Command Positions',
+			description:
+				'Served as Director General of Nigerian Army Recruitment and Reserve, Brigade Commander of the 13 Brigade in Calabar, and Acting General Officer Commanding of the 82 Division in Enugu.',
+			icon: 'star'
+		},
+		{
+			year: '1993',
+			title: 'Bakassi Peninsula Crisis',
+			description:
+				"As Commander of the 13 Amphibious Brigade, played a pivotal role in securing peace between Nigeria and Cameroon, preserving Nigeria's territorial integrity.",
+			icon: 'shield'
+		},
+		{
+			year: '1996',
+			title: 'Distinguished Service',
+			description:
+				'Concluded his military service after decades of exemplary leadership, leaving a legacy of mentorship and strategic excellence in the Nigerian Armed Forces.',
 			icon: 'award'
 		}
 	];
@@ -126,31 +137,7 @@
 	];
 
 	// Changed from const to let to allow reassignment
-	let condolences: Condolence[] = [
-		{
-			name: 'Gen. James Adebayo',
-			message:
-				'A true patriot and exemplary leader. Your legacy will forever inspire generations to come.',
-			date: 'March 15, 2025',
-			relation: 'Colleague',
-			approved: true
-		},
-		{
-			name: 'Col. Sarah Musa',
-			message: 'It was an honor to serve under your command. Rest in peace, sir.',
-			date: 'March 14, 2025',
-			relation: 'Subordinate Officer',
-			approved: true
-		},
-		{
-			name: 'The Ogbonna Family',
-			message:
-				'Our beloved father, husband, and grandfather. Your wisdom and love will guide us always.',
-			date: 'March 13, 2025',
-			relation: 'Family',
-			approved: true
-		}
-	];
+	let condolences: Condolence[] = [];
 
 	const coreValues = [
 		{ title: 'Leadership', description: 'Exemplary commander who led by example', icon: 'compass' },
@@ -495,22 +482,22 @@
 			{
 				title: 'His Legacy',
 				content:
-					'Forever etched in history as "The Boy Who Named NMS," General Ogbonna\'s vision in 1959 redefined the future of the Nigerian Military School, Zaria. His suggestion to rename the Boys Company to the Nigerian Military School (NMS) captured the essence of its mission—an enduring legacy that still stands strong today. His clarity of thought and foresight ensured that the institution\'s name reflected its military purpose, and his proposal was officially adopted that same year.'
+					'Forever etched in history as “The Boy Who Named NMS,” General Ogbonna’s vision in 1959 redefined the future of the Nigerian Military School, Zaria. His suggestion to rename the Boys Company to the Nigerian Military School (NMS) captured the essence of its mission—an enduring legacy that still stands strong today. His clarity of thought and foresight ensured that the institution’s name reflected its military purpose, and his proposal was officially adopted that same year.'
 			},
 			{
 				title: 'Military Career',
 				content:
-					"From the halls of the United Stated Army Cadets School, Fort Knox, Kentucky to the frontlines of history at the Command and Staff College in Quetta, Pakistan, General Ogbonna's stellar military career spanned over three decades, during which he earned a reputation as one of the foremost post-civil war 2-Star Generals of Igbo descent."
+					'From the halls of the United States Army Cadets School, Fort Knox, Kentucky to the frontlines of history at the Command and Staff College in Quetta, Pakistan, General Ogbonna’s stellar military career spanned over three decades, during which he earned a reputation as one of the foremost post-civil war 2-Star Generals of Igbo descent.'
 			},
 			{
 				title: 'Leadership',
 				content:
-					'A gallant infantry officer and leader in every sense, he held key roles including Director of Studies at the National Institute for Policy and Strategic Studies (NIPSS), Kuru, Jos.'
+					'A gallant infantry officer and leader in every sense, he held key roles including Director General of Nigerian Army Recruitment and Reserve, Brigade Commander of the 13 Brigade in Calabar, Acting General Officer Commanding of the 82 Division in Enugu, and Director of Studies at the National Institute for Policy and Strategic Studies (NIPSS), Kuru, Jos.'
 			},
 			{
 				title: 'International Service',
 				content:
-					"During the Bakassi Peninsula crisis, his leadership as Commander of the 13 Amphibious Brigade played a pivotal role in securing peace between Nigeria and Cameroon, preserving Nigeria's territorial integrity with diplomacy and strength. Globally, he served as a military diplomat, representing Nigeria in key international missions across the Philippines, Venezuela, Brazil, South Africa, the United States, the United Kingdom, Germany, the Netherlands, and China, elevating Nigeria's standing on the global stage."
+					'During the Bakassi Peninsula crisis, his leadership as Commander of the 13 Amphibious Brigade played a pivotal role in securing peace between Nigeria and Cameroon, preserving Nigeria’s territorial integrity with diplomacy and strength. Globally, he served as a military diplomat, representing Nigeria in key international missions across the Philippines, Venezuela, Brazil, South Africa, the United States, the United Kingdom, Germany, the Netherlands, and China, elevating Nigeria’s standing on the global stage.'
 			},
 			{
 				title: 'Regional Influence',
@@ -530,14 +517,15 @@
 			{
 				title: 'Legacy',
 				content:
-					"A soldier. A diplomat. A visionary. A leader of his people. General Ogbonna's life was one of quiet strength and unwavering service. His legacy will continue to echo through the generations— through the soldiers he mentored, the communities he uplifted, and the country he served with distinction. His story is one of courage, integrity, and vision, and his memory will live on in the hearts of those who encountered him."
+					'A soldier. A diplomat. A visionary. A leader of his people. General Ogbonna’s life was one of quiet strength and unwavering service. His legacy will continue to echo through the generations—through the soldiers he mentored, the communities he uplifted, and the country he served with distinction. His story is one of courage, integrity, and vision, and his memory will live on in the hearts of those who encountered him.'
 			},
 			{
 				title: 'Remembrance',
 				content:
-					'He leaves behind a nation forever indebted to his selfless contributions, a beloved family, and a community that will remember him as a pillar of strength and leadership.'
+					'He leaves behind a nation forever indebted to his selfless contributions, a beloved family, and a community that will remember him as a pillar of strength and leadership. General Ogbonna leaves behind his devoted wife, eight children, eight grandchildren, and a legacy that will inspire for years to come.'
 			}
 		];
+		return bioPages;
 	}
 
 	// Add these functions to navigate through the biography pages
@@ -589,6 +577,9 @@
 	}
 
 	onMount(() => {
+		windowWidth = window.innerWidth;
+		bioPages = prepareBioPages();
+
 		const checkSupabaseConnection = async () => {
 			try {
 				const { data, error } = await supabase.from('condolences').select('count').single();
@@ -693,7 +684,18 @@
 			sectionObserver.disconnect();
 			window.removeEventListener('scroll', handleScroll);
 		};
+
+		windowWidth = window.innerWidth;
+		const handleResize = () => {
+			windowWidth = window.innerWidth;
+		};
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
 	});
+
+	let windowWidth = 0;
 
 	// Handle keyboard events for accessibility
 	const handleKeyDown = (event: KeyboardEvent, callback: () => void) => {
@@ -712,32 +714,7 @@
 		}
 	};
 
-	const additionalCondolences: Condolence[] = [
-		{
-			name: 'Lt. Col. Ibrahim Mohammed',
-			message:
-				'Major General Ogbonna was a mentor to many of us. His leadership style and dedication to service will continue to inspire generations of officers.',
-			date: 'March 12, 2025',
-			relation: 'Military Personnel',
-			approved: true
-		},
-		{
-			name: 'Dr. Amina Okonkwo',
-			message:
-				'I had the privilege of working with the General on several community health initiatives. His commitment to improving healthcare for veterans was remarkable.',
-			date: 'March 11, 2025',
-			relation: 'Community Member',
-			approved: true
-		},
-		{
-			name: 'Chief Emeka Nwosu',
-			message:
-				'Our community has lost a great son. His contributions to peace and development will never be forgotten.',
-			date: 'March 10, 2025',
-			relation: 'Community Member',
-			approved: true
-		}
-	];
+	const additionalCondolences: Condolence[] = [];
 
 	newCondolence = { name: '', message: '', relation: '' };
 </script>
@@ -1244,7 +1221,7 @@
 							in:fly={{ y: 20, duration: 500 }}
 						>
 							<!-- Close button - Repositioned for mobile -->
-							<div class="bg-ng-dark sticky top-0 z-10 flex justify-end px-4 py-2 lg:hidden">
+							<div class="bg-ng-dark sticky top-0 z-10 flex justify-end px-4 py-2">
 								<button
 									class="rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
 									on:click={toggleBiography}
@@ -1277,7 +1254,7 @@
 
 							<!-- Book content - Modified for mobile -->
 							<div class="flex h-[calc(100vh-200px)] flex-col md:h-[65vh] md:flex-row">
-								<!-- Single page view for mobile, dual page for desktop -->
+								<!-- Left page (always visible) -->
 								<div
 									class="flex-1 overflow-y-auto p-4 md:w-1/2 md:border-r md:border-gray-300 md:p-8"
 								>
@@ -1297,14 +1274,39 @@
 										</div>
 									{/if}
 								</div>
+
+								<!-- Right page (desktop only) -->
+								<div class="hidden flex-1 overflow-y-auto p-4 md:block md:w-1/2 md:p-8">
+									{#if currentBioPage + 1 < bioPages.length}
+										<div>
+											<div class="border-ng-gold/30 mb-4 border-b pb-4 md:mb-6">
+												<h3 class="text-ng-dark font-serif text-xl font-bold md:text-2xl">
+													{bioPages[currentBioPage + 1].title}
+												</h3>
+												<div class="text-ng-gold/50 mt-2 h-1 w-24 rounded-full bg-current"></div>
+											</div>
+											<div class="prose prose-sm md:prose-lg max-w-none">
+												<p class="leading-relaxed text-gray-700">
+													{bioPages[currentBioPage + 1].content}
+												</p>
+											</div>
+										</div>
+									{/if}
+								</div>
 							</div>
 
-							<!-- Navigation buttons - Redesigned for mobile -->
+							<!-- Replace the navigation buttons section -->
 							<div class="sticky bottom-0 border-t border-gray-200 bg-gray-50 p-3 md:p-4">
 								<div class="flex items-center justify-between">
 									<button
 										class="text-ng-dark flex items-center rounded-md px-3 py-2 text-sm font-medium transition-all disabled:opacity-50 md:px-4 md:text-base"
-										on:click={() => (currentBioPage = Math.max(0, currentBioPage - 1))}
+										on:click={() => {
+											if (window.innerWidth >= 768) {
+												currentBioPage = Math.max(0, currentBioPage - 2);
+											} else {
+												currentBioPage = Math.max(0, currentBioPage - 1);
+											}
+										}}
 										disabled={currentBioPage === 0}
 									>
 										<svg
@@ -1321,20 +1323,31 @@
 												d="M15 19l-7-7 7-7"
 											/>
 										</svg>
-										Previous
+										{window.innerWidth >= 768 ? 'Previous Pages' : 'Previous Page'}
 									</button>
 
 									<div class="text-xs text-gray-500 md:text-sm">
-										Page {currentBioPage + 1} of {bioPages.length}
+										{#if window.innerWidth >= 768}
+											Pages {currentBioPage + 1}-{Math.min(currentBioPage + 2, bioPages.length)} of {bioPages.length}
+										{:else}
+											Page {currentBioPage + 1} of {bioPages.length}
+										{/if}
 									</div>
 
 									<button
 										class="text-ng-dark flex items-center rounded-md px-3 py-2 text-sm font-medium transition-all disabled:opacity-50 md:px-4 md:text-base"
-										on:click={() =>
-											(currentBioPage = Math.min(bioPages.length - 1, currentBioPage + 1))}
-										disabled={currentBioPage >= bioPages.length - 1}
+										on:click={() => {
+											if (window.innerWidth >= 768) {
+												currentBioPage = Math.min(bioPages.length - 2, currentBioPage + 2);
+											} else {
+												currentBioPage = Math.min(bioPages.length - 1, currentBioPage + 1);
+											}
+										}}
+										disabled={window.innerWidth >= 768
+											? currentBioPage >= bioPages.length - 2
+											: currentBioPage >= bioPages.length - 1}
 									>
-										Next
+										{window.innerWidth >= 768 ? 'Next Pages' : 'Next Page'}
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											class="ml-2 h-5 w-5"
@@ -1444,13 +1457,11 @@
 				<div class="relative z-10 mx-auto max-w-3xl text-center">
 					<p class="mt-4 mb-6 font-serif text-xl italic md:mt-auto md:text-2xl">
 						<br class="md:hidden" />
-						"The true measure of a soldier is not how he serves in times of peace, but how he leads in
-						times of conflict. Major General Ogbonna exemplified the highest standards of military leadership
-						throughout his distinguished career."
+						"The legacy of heroes is the memory of a great name and the inheritance of a great example."
 					</p>
 					<div class="flex items-center justify-center">
 						<div class="bg-ng-gold/50 mr-4 h-px w-12"></div>
-						<p class="text-ng-gold font-medium">General James Adebayo, Chief of Defence Staff</p>
+						<p class="text-ng-gold font-medium">Benjamin Disraeli</p>
 						<div class="bg-ng-gold/50 ml-4 h-px w-12"></div>
 					</div>
 				</div>
@@ -1767,7 +1778,6 @@
 									<option value="">Select relationship</option>
 									<option value="Family">Family</option>
 									<option value="Friend">Friend</option>
-									<option value="Colleague">Colleague</option>
 									<option value="Military Personnel">Military Personnel</option>
 									<option value="Community Member">Community Member</option>
 								</select>
@@ -1884,24 +1894,50 @@
 						</button>
 					</div>
 
-					<div class="condolence-scrollbar lg:max-h-[600px] space-y-6 overflow-y-auto pr-2">
-						{#each filterCondolences( [...condolences, ...additionalCondolences] ).slice(0, showMoreCondolences ? undefined : 3) as condolence, i}
+					<div class="condolence-scrollbar space-y-6 overflow-y-auto pr-2 lg:max-h-[600px]">
+						{#if filterCondolences([...condolences, ...additionalCondolences]).length === 0}
 							<div
-								class="border-ng-gold transform rounded-lg border-l-4 bg-gray-50 p-6 shadow-sm transition-all duration-300 hover:translate-x-1 hover:shadow-md"
-								in:fly={{ y: 20, duration: 500, delay: 200 + i * 100 }}
+								class="border-ng-gold flex flex-col items-center justify-center rounded-lg border-l-4 bg-gray-50 p-8 text-center"
+								in:fly={{ y: 20, duration: 500 }}
 							>
-								<p class="mb-4 text-gray-600 italic">"{condolence.message}"</p>
-								<div class="flex flex-wrap items-center justify-between">
-									<div>
-										<span class="font-medium text-gray-800">{condolence.name}</span>
-										{#if condolence.relation}
-											<span class="ml-2 text-sm text-gray-500">({condolence.relation})</span>
-										{/if}
-									</div>
-									<span class="text-sm text-gray-500">{condolence.date}</span>
-								</div>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="text-ng-gold mb-4 h-12 w-12"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+									/>
+								</svg>
+								<p class="text-lg font-medium text-gray-800">No Condolences Yet</p>
+								<p class="mt-2 text-gray-600">
+									Be the first to share your memories and condolences
+								</p>
 							</div>
-						{/each}
+						{:else}
+							{#each filterCondolences( [...condolences, ...additionalCondolences] ).slice(0, showMoreCondolences ? undefined : 3) as condolence, i}
+								<div
+									class="border-ng-gold transform rounded-lg border-l-4 bg-gray-50 p-6 shadow-sm transition-all duration-300 hover:translate-x-1 hover:shadow-md"
+									in:fly={{ y: 20, duration: 500, delay: 200 + i * 100 }}
+								>
+									<p class="mb-4 text-gray-600 italic">"{condolence.message}"</p>
+									<div class="flex flex-wrap items-center justify-between">
+										<div>
+											<span class="font-medium text-gray-800">{condolence.name}</span>
+											{#if condolence.relation}
+												<span class="ml-2 text-sm text-gray-500">({condolence.relation})</span>
+											{/if}
+										</div>
+										<span class="text-sm text-gray-500">{condolence.date}</span>
+									</div>
+								</div>
+							{/each}
+						{/if}
 					</div>
 
 					<!-- Load more button -->
@@ -2274,12 +2310,13 @@
 						surrounded by such warmth and care brings us peace. Thank you for standing with us,
 						honoring his memory, and sharing in our grief.
 					</p>
-					<button 
-					type="button"
-					on:click={() => scrollToSection('funeral')}
-					on:keydown={(e) => handleKeyDown(e, () => scrollToSection('funeral'))}
-					class="text-ng-gold inline-flex items-center hover:underline hover:cursor-pointer"
-					aria-label="Make a tribute">
+					<button
+						type="button"
+						on:click={() => scrollToSection('funeral')}
+						on:keydown={(e) => handleKeyDown(e, () => scrollToSection('funeral'))}
+						class="text-ng-gold inline-flex items-center hover:cursor-pointer hover:underline"
+						aria-label="Make a tribute"
+					>
 						<span>Make a Tribute</span>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
